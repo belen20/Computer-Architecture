@@ -1,3 +1,3 @@
-# Computer-Architecture
+# MIPS Simulation Envirorment
 
-MIPS Simulation Envirorment
+
