@@ -9,7 +9,7 @@ In this beta version, the code comments and teaching resources are in Spanish. W
 (pendiente)
 
 #Clases
-![My image](C:\Users\usuario\Pictures\Class.PNG)
+###Clase LGMIPS
 
 
 #Colaboración
