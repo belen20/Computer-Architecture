@@ -6,6 +6,8 @@ In this beta version, the code comments and teaching resources are in Spanish. W
 
 #Actividades docentes
 
+(pendiente)
+
 #Clases
 
 #Colaboración
