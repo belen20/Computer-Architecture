@@ -9,8 +9,6 @@ In this beta version, the code comments and teaching resources are in Spanish. W
 (pendiente)
 
 #Clases
-El diagrama de clases de la aplicación es el siguiente.
-![alt text](https://www.dropbox.com/s/dmqe12mc2etfyha/Class.PNG?dl=0 "Logo Title Text 1")
 #####Clase _Main_
 En esta clase se crea toda la estructura necesaria para simular la ejecución segmentada, es decir, la arquitectura correspondiente y la comprobación de que se dispone de todos los ficheros necesarios para llevar a cabo la ejecución.
 
