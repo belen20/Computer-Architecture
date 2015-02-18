@@ -9,7 +9,7 @@ In this beta version, the code comments and teaching resources are in Spanish. W
 (pendiente)
 
 #Clases
-###Clase LGMIPS
+#####Clase LGMIPS
 
 
 #Colaboración
