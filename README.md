@@ -9,7 +9,59 @@ In this beta version, the code comments and teaching resources are in Spanish. W
 (pendiente)
 
 #Clases
-#####Clase LGMIPS
+#####Clase Main
+En esta clase se crea toda la estructura necesaria para simular la ejecución segmentada. Se crea la arquitectura correspondiente y se comprueba que se dispone de todos los ficheros necesarios para llevar a cabo la ejecución.
+
+#####Interface MIPS
+En esta interface se declaran todas las características típicas de una arquitectura general: el número de bits, el número de registros de proósito general, las unidades funcionales implementaas y los estados por lo cuales pasa una instrucción.
+
+#####Clase Architecture
+Se crean todas las estructuras de la arquitectura: registros de propósito general, ROB, memoria de datos y memoria de instrucciones.
+
+#####Clase BrachManager
+En esta clase se implementa la gestión de los satos. Se decide si un salto se ejecuta o no a partir de la comprovación de las condiciones de salto y se carga el nuevo estado de la máquina.
+
+#####Dependence
+Se implementa el análisis de las dependencias entre las instrucciones y se crea el grafo de dependencias correspondiente.
+
+#####Instruction
+Se define lo que es una instrucción (OPCODE y operandos) y otros atributos necesarios para la ejecución: información sobre que tipo de instrucción es, si es la causante de una dependencia, si es una instrucción ejecutada de forma especulativa y cuando a entrado y ha salido de cada una de las fases de la segmentación.
+
+#####Memory
+En esta clase se define lo que es la memoria de datos como un conjunto de palabras de memoria, así como las funciones necesarias para almacenar variables y vectores y su correspondiente lectura.
+
+#####Word
+Se implementan todas aquellas funciones relacionadas con el tratamiento de una palabra de memoria: almacenamiento a nivel de word y direccionamiento.
+
+#####Operations
+En esta clase se implementan las operaciones que se llevan a cabo por cada uno de los tipos de instrucción. Es decir, para cada uno de los OPCODES, qué acciones se llevan a cabo en la arquitectura.
+
+#####Pipeline
+Se implementa la ejecución de forma segmentada de las instrucciones a partir de la simulación de un reloj que controla que la llamada en paralelo a cada una de las fases.
+
+#####ROB
+En esta clase se implementan las funciones relacionadas con el funcionamiento de la ROB, como la entrada de una instruccion, mantener el orden de las instrucciones y la salida de las mismas, así como la realización de la fase de commit.
+
+#####Scheduler
+Clase que define todas las funciones necesarias para llevar a cabo la planificación de instrucciones en función de los parámetros de la arquitectura definidos.
+
+#####State
+Se definen los estados por los que puede pasar una instrucción mientras está dentro de la unidad de segmentación.
+
+#####Statistics
+Se implementa la realización de los cálculos necesarios para extraer las medidas de rendimiento resultantes de la ejecución de las instrucciones.
+
+#####Clases para el tratamiento de los ficheros de configuración.
+- Clase ConfigFile: clase encargada de cargar la configuración definida de la arquitectura.
+- Clase ConfigRegisters: clase encargada de cargar el valor de los registros de propósito general.
+- Clase SimResult: clase encargada del volcado de los resultados de la ejecución.
+
+#####Clase FunctionalUnit
+Clase abstracta donde se define qué es y qué funciones tiene una unidad funcional genérica. Las clases FuGen, FuMult y FuAdd son instacias de ésta clase que definen una unidad funcinal genérica, de multiplicación y de suma correspondientemente.
+
+#####Clases encargadas de la generación de código aleatorio
+- Clase GenCodeFile: clase encargada de cargar la configuración del código a generar.
+- Clase GenCode: clase que implementa las funciones encargadas de generar el código de forma aleatoria a partir del comportamiento del código definido.
 
 
 #Colaboración
