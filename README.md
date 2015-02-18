@@ -9,6 +9,8 @@ In this beta version, the code comments and teaching resources are in Spanish. W
 (pendiente)
 
 #Clases
+![Java Class Diagram](C:\Users\usuario\Pictures\Class.PNG "Java Class Diagram")
+
 
 #Colaboración
 Cualquier duda, sugerencia, participación y mejora del código presentado será bienvenida. Por favor, utilice la sección "Issues" de GITHUB para tal fin. 
