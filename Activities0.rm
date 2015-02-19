@@ -1,0 +1,38 @@
+Supongamos el siguiente código de tres direcciones para las instrucciones de un bucle:
+
+LD R0, #0
+bucle:
+LD R1, (@FFF0)R0
+LD R2, (@FFF1)R0
+ADD R2, R1, R2
+MULT R2, R2,R2
+SUB R2, R1,R2
+ADD R0, #2
+SUB R3, R0,R4
+BNEQZ R3, bucle
+
+Utiliza el simulador proporcionado para las prácticas para analizar y comparar los siguientes casos:
+
+
+1. Ejecución de una iteración del bucle sin utilizar renombre de registros y sin utilización del ROB.
+2. ¿Cuantos ciclos crees que se encuentra el bloqueada la ejecución debido a las dependencias de salida y falsas dependencias? ¿Cuanto mejoraría la ejecución si se eliminaran dichas dependencias?
+3. Si activamos únicamente la utilización del ROB, mejoraremos en la ejecución del código. Compruébalo ejecutando el código con el simulador y activando el uso del ROB.
+3. Ejecuta una iteración del bucle utilizando esta vez un número de registros de renombre suficientes, pero sin utilizar el ROB. ¿Los resultados obtenidos son los esperados en el análisis del punto 2?
+
+4. Aplica una técnica de desarrollo de bucles para desarrolla el bucle dos veces. ¿Conseguiremos de esta forma algún tipo de mejora en relación al caso del apartado 1, si no disponemos de renombre de registros ni ROB? ¿Y si activamos el ROB? ¿Y si activamos el renombre de registros? ¿Y si activamos ambas técnicas?
+5. Confirma las conclusiones llegadas en el punto 4 mediante la ejecución del código desarrollado dos veces en el simulador.
+
+6. Implementa en el simulador una técnica de planificación basada en el planificador de listas, suponiendo que las latencias de todas las instrucciones son iguales. ¿Consideras que se mejorará la ejecución del bucle inicial aplicando esta técnica de planificación? ¿Y sobre el bucle desarrollado dos veces?
+7. Comprueba las conclusiones del análisis en del punto 6 mediante la ejecución del código con el planificador activado en el simulador.
+
+
+
+Imaginemos que el código del bucle cambia y las funciones a realizar ahora son las siguientes:
+
+LD R1, (@FFF0)R0
+LD R2, (@FFF1)R0
+ADD R3, R1, R2
+MULT R4, R1,R2
+SUB R5, R1,R2
+
+#Repite los análisis llevados a cabo desde el punto 1 al 7 para este nuevo código y explica a que se deben las diferencias en los resultados.
