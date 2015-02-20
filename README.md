@@ -1,5 +1,5 @@
 # MIPS SIMULATION ENVIRONMENT – TEACHING TOOL
-En entorno de simulación de MIPS es una herramienta docente para la explicación y la ejercitación del conjunto de técnicas de paralelismo a nivel de instrucciones, conocido con el acrónimo en inglés de ILP. Se ha programado un diseño modular de la arquitectura MIPS que permite la ejecución segmentada de una instrucción, con el objetivo de ofrecer la posibilidad de comparar diferentes escenarios. Estos escenarios son las propuestas de mejora sobre ILP. Además, se adjuntan unos recursos didácticos junto con la herramienta.
+El entorno de simulación de MIPS es una herramienta docente para la explicación y la ejercitación del conjunto de técnicas de paralelismo a nivel de instrucciones, conocido con el acrónimo en inglés de ILP. Se ha programado un diseño modular de la arquitectura MIPS que permite la ejecución segmentada de una instrucción, con el objetivo de ofrecer la posibilidad de comparar diferentes escenarios. Estos escenarios son las propuestas de mejora sobre ILP. Además, se adjuntan unos recursos didácticos junto con la herramienta.
 
 #Abstract 
 In this beta version, the code comments and teaching resources are in Spanish. We will work to translate to English.
